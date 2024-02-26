@@ -45,18 +45,6 @@ setClass("Person", slots = c(name = "character", experience = "numeric", major =
 
 setGeneric("summary")
 
-setMethod("summary", "Person", function(object) 
-
-{
-
-  cat("Name: ", object@name, "\n")
-  
-  cat("Age: ", object@experience, "\n")
-  
-  cat("Major: ", object@major, "\n")
-  
-})
-
 person1 <- new("Person", name = "Leo", experience = 3, major = "Bioinformatics")
 
 summary(person1)
